@@ -55,14 +55,14 @@ public class DiscoverPeersActivity extends AppCompatActivity {
         chatButton = findViewById(R.id.chatButton);
 // In DiscoverPeersActivity.java
 
-        Button btnFileTransfer = findViewById(R.id.btn_file_transfer);
+     /*   Button btnFileTransfer = findViewById(R.id.btn_file_transfer);
         btnFileTransfer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DiscoverPeersActivity.this, FileTransferActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         wifiP2pManager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
         channel = wifiP2pManager.initialize(this, getMainLooper(), null);
